@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Estudante</title>
+</head>
+<body>
+<form action="/edit/{{ estudante.id }}" method="post">
+    <p><input type="text" name="nome" id="nome" placeholder="nome" value="{{ estudante.nome }}"></p>
+    <p><input type="text" name="idade" id="idade" placeholder="idade" value="{{ estudante.idade }}"></p>
+    <p><button type="submit">Enviar</button> </p>
+</form>
+</body>
+</html>

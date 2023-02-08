@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelo</title>
+</head>
+<body>
+    {#Comentário Jinga2#}
+    <p>Um Template</p>
+    <p>
+        {{5 * 7}}
+    </p>
+    <p>
+        {{x * y}}
+    </p>
+
+    {% if x >= 50 %}
+    <p>X maior ou igual a 50</p>
+    {% else %}
+    <p>X menor que 50</p>
+    {% endif %}
+    <hr>
+    <table>
+            {% for k, v in query.items() %}
+            <tr>
+                <th>{{ k }}</th>
+                <td>{{ v }}</td>
+            </tr>
+            {% endfor %}
+    </table>
+</body>
+</html>
